@@ -35,4 +35,4 @@ Other topics
 Next Meeting
 ------------
 
-Third Thursday of the month: 11am Pacific
+Third Thursday of the month: 8am Pacific
