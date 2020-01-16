@@ -8,26 +8,15 @@ In Attendance
 
 Quick Updates
 -------------
-
--   **Question Every Month**
-    - What have you been working on lately?
--   **Question of the Month**
-    - To be determined month by month
+### What have you been working on lately?
+- **Name** - Summary of items FYI
 
 Old Business
 ------------
 
-Release Progress
-----------------
-
-Translation
------------
-
-Documentation
--------------
-
-UI/UX
------
+Question of the Month
+---------------------
+### Determined in advance for open discussion
 
 Other topics
 ------------
