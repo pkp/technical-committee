@@ -11,6 +11,8 @@ Quick Updates
 ### What have you been working on lately?
 - **Name** - Summary of items FYI
 
+### Highlight of the month: ###
+
 Old Business
 ------------
 
