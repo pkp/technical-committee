@@ -19,6 +19,6 @@ Other topics
 Next Meeting
 ------------
 
-- Time/Date:
+- Time/Date: (1st Thursday of the month, 8:00am Pacific time)
 - Chair:
 - Projects:
