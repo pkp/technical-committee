@@ -1,0 +1,221 @@
+# 21 July 2022
+
+In Attendance
+-------------
+
+-   Present: Antti-Jussi, Marc, Alex, Ronald, Alec, Sonya
+-   Regrets:  
+
+
+Quick Updates
+-------------
+
+### What have you been working on lately?
+- **Marc** - 
+    - Docker for OMP (and refacty.
+    - Testing OJS and OMP 3.3.0-11.
+    - Documentation revision (Multilang and PKP).
+        - Currently beta document; Marc will share on Mattermost
+    - gitHub Discussions and forum support.
+
+- **Alec**
+    - Sprints (see below)
+    - Proposals in Github
+        - Improved hook conventions: https://github.com/pkp/pkp-lib/discussions/8089
+        - Eloquent management of relationship tables: https://github.com/pkp/pkp-lib/discussions/8103
+    - Weblate upgrade (thanks Rob)
+        - If you see anything amiss, please let Alec know
+        - Alec will watch for interesting new functionality
+
+- **Alex**
+    - Plaudit plugin for OPS (preprints endorsement)
+    - Ongoing work with Dataverse plugin for OPS
+    - Bogotá Sprint
+
+- **Ronald**
+  -  launch of [Berlin Universities Publishing](https://berlin-universities-publishing.de) (still working on the English version)
+  -  XML Publishing Workflow
+
+- **AJ**
+    - On vacation
+    - Doing finishing work on https://github.com/pkp/pkp-lib/issues/5932
+
+
+
+
+### Highlight of the month: ###
+None
+
+
+Agenda
+------
+
+- Polling & feature request additions to PKP support forum III (decisions)
+- TC page update
+- Testing workgroup
+- Analytics workgroup
+- GitHub Discussions
+- Sprints and remote participation
+- ...
+
+Notes
+-----
+
+## Helsinki sprint
+
+- Small size (~30) but active (see PKP blog)
+- About half (?) developers.
+- Meeting between national portals -- very promising.
+- Some nice developments started (ie: CRediT plugin).
+- Questions:
+    - How to get editors interested in sprints?
+        - Was the agenda attractive for them?
+        - Were the subjects suggested not of interest?
+        - Combine workshops with sprints to increase appeal?
+            - PKP used to do this successfully with both PKP conferences and 3rd-party conferences
+- Generally really successful and friendly. Congratulations to all involved!
+- Thoughts:
+    - Sprints also help building community. 
+    - Recover Member's committee.
+
+## Bogota sprint
+
+- Quite big (10 groups/50+ people) and diverse but also very active.
+- Good representation of all Latin America.
+- Almost too large for the small number of PKP attendees -- some groups lacked orientation on related projects and approaches
+- Lots of service providers represented
+- Interesting discussion e.g. about JATS Parser plugin
+
+## Next sprints?
+
+- Opportunity for sprint in Brazil (March).
+- Alec intersted in finding out ways to hold these as responsibly as possible WRT Covid, travel chaos, climate change.
+
+### Polling & feature request additions to PKP support forum III (decisions)
+- First meeting we talk about the needs.
+- Second one:
+    - Alec explained [Github Projects](https://github.com/orgs/pkp/projects?type=beta). Video recorded.
+    - The proposal for the forum is new "Feature" channel in discourse (with [Topic Voting](https://www.discourse.org/plugins/topic-voting.html) and [Discourse-docs](https://meta.discourse.org/docs)).
+- Third? Time to take some decisions.
+- Concern about gatekeeping people away from Github -- will it discourage contribution, or reinforce the vendor/client perception?
+    - Setting clear standards about when an request gets migrated from forum to github. If we wait for the dev team to have capacity, forum will likely not get representation in selected tasks.
+    - Stewardship will be necessary -- forum group has been in discussion
+    - Concern about favouring big players if smaller ones don't know how to participate / don't feel welcome / have their voices lost
+    - Practical examples for how requests evolve:
+        - Many users asking for similar additions: [forum](https://forum.pkp.sfu.ca/t/making-orcid-required-field/45810)
+        - Team migrates request into relevant issue (or files an issue): [github](https://github.com/pkp/pkp-lib/issues/7191#issuecomment-1190823138)
+    - Concern about the volume of feature requests already in the forum -- how do these get retired?
+    - Feedback to community -- once something is filed and voted, is it going somewhere?
+    - Similar experience on other tools -- can be frustrating if issue has a large number of votes but never seems to get attention. Others with low votes move ahead quickly.
+- Alec to talk with Amanda about possible orientation meeting including the technical committee.
+- Glob [sic] post about changes: https://pkp.sfu.ca/2022/07/20/improving-how-we-collect-community-feedback/
+
+
+
+### TC page update
+
+**Current Members**
+
+* Marc Bria (Chair, Universitat Autònoma de Barcelona) [2013 - ]
+* Davin Baragiotta (Erudit) [ 2022 - ]
+* Sonya Betz (Past Chair, University of Alberta) [ 2018 - ]
+* Rick Hoover (University of Pittsburgh) [ 2022 - ]
+* Pierre Lasou (Université Laval) [ 2022 - ]
+* Alex Mendonça (SciELO) [2017 - ]
+* Antti-Jussi Nygård (at-large member) [2020 - ]
+* Alec Smecher (Past Chair, PKP) [ 2013 - ]
+* Ronald Steffen (Free University Berlin) [ 2019 - ]
+* Dulip Withanage (TIB Hannover) [2015 - ]
+
+**Former Members**
+
+* Allan Bell (UBC) [ 2013- 2014 ]
+* Bozana Bokan (Free University Berlin) [ 2013 - 2015?? ]
+* Kenton Good (University of Alberta) [ 2017 - 2018 ]
+* Clinton Graham (Past Chair, University of Pittsburgh) [2014 - 2022]
+* Brian Gregg (Pitt) [ 2013 - 2014 ]
+* Jeanette Hatherill (Past Chair, University of Ottawa) [2014 - 2017]
+* Barbara Hui (Past Chair, CDL) [ 2013 - 2013 ]
+* Bart Kawula (OCUL) [ 2013 - 2015 ]
+* Qinqin Lin (OCUL) [ 2013 - 2013 ]
+* Svantje Lilienthal (Free University Berlin) [ 2017 - 2018 ]
+* James MacGregor (PKP) [ 2013 - 2015 ]
+* Jason Nugent (PKP) [ 2013 - 2016 ]
+* Lisa Schiff (CDL) [ 2013 - 2013 ]
+* Bronwen Sprout (UBC) [ 2013 - ?? ]
+* Kevin Stranack (PKP) [ 2014 - ?? ]
+* Marco Tullney (at-large member) [ 2014 - 2020 ]
+
+**Comments**
+
+* List sorted in alphabetical order of surname.
+* Please check your names, affiliation and dates (and the details of those you know).
+* The list has been compiled according to our minutes... but I did it fast and may include errors.
+* I have added a new section called "Former members" (unless a better name comes up) because I think they deserve to be mentioned, but if you are not convinced, we can talk about it at the next meeting.
+* Nathelie proposed to add the prefix "Past chair" to all those who have served. Again, let's talk about it at the next meeting.
+
+
+
+### Testing workgroup
+
+### Analytics workgroup
+
+### GitHub Discussions
+
+
+
+Old Business
+------------
+
+- Proposals to facilitate support work:
+    - Knowledge base tool
+
+- To be recalled in September:
+    - How to communicate supported versions? (OxS apps life cycle)
+        - Examples:
+            - PHP: https://www.php.net/supported-versions.php
+            - Ubuntu: https://ubuntu.com/about/release-cycle
+            - Debian: https://en.wikipedia.org/wiki/Debian_version_history
+            - NodeJS: https://nodejs.org/en/about/releases/
+            - Oxygen: https://www.oxygenxml.com/eol.html
+            - Oracle: https://itechbrand.com/oracle-12c-end-of-life/
+            - redHat: https://access.redhat.com/support/policy/updates/errata
+            - Microsoft: https://docs.microsoft.com/en-us/mem/configmgr/core/servers/manage/current-branch-versions-supported
+            - End of Life: https://endoflife.date/blender
+            - Versio: https://www.versio.io/product-release-end-of-life-eol-Red%20Hat%20Enterprise%20Linux-Red%20Hat.html
+
+        - Requirements:
+            - visual.
+            - automatic.
+            - precise.
+            - ???
+
+    - How to communicate PKP apps requirements?
+        - Proposal:
+            - Table of php versions and plugins?
+                | OJS     | PHP | plugins |
+                | ------- | --- | ------- |
+                | 2.x     | 5.6 | ??      |
+                | 3.1     | 7.3 | ??      |
+                | 3.2     | 7.4 | ??      |
+                | 3.3     | 8.0 | ??      |
+        - Ideas:
+            - https://forum.pkp.sfu.ca/t/ojs-3-2-1-1-error-failed-ajax-request-or-invalid-json-returned/61484/29?u=marc
+
+- Analytics workgroup?
+    - No news, yet.
+
+Question of the Month
+---------------------
+### Determined in advance for open discussion
+
+Other topics
+------------
+
+
+Next Meeting
+------------
+
+Third Thursday of the month: 8am Pacific
+- Discuss possible future sprint forms (covid, remote participation, climate change)
+- Review progress on feature request and contributor guide changes
