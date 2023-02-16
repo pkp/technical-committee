@@ -1,0 +1,161 @@
+# 16 Febrary 2023
+
+In Attendance
+-------------
+
+- Present: 
+- Regrets:
+
+[Former notes archive](https://github.com/pkp/technical-committee/tree/main/meeting-minutes)
+
+
+Quick Updates
+-------------
+
+### What have you been working on lately?
+
+- **Dulip**
+    - [confid plugin](https://github.com/withanage/confid)
+    - Grant application - finished writing  for XML-Workflows and submitted. :crossed_fingers: 
+    - Onboarding new collegues for CRAFT-OA
+    - iThenticate plugin - bugfixing 
+    - OJS conference support - concept and proto-type implementation (in contact with Marc for requirement gathering)
+    - Oricd Presentation  (Irish Orcid Consortium)
+    - CRAFT-OA Developer training
+- **AJ**
+    - Align URL structure for browsing across all applications https://github.com/pkp/pkp-lib/issues/5932
+    - CRAFT-OA work, introducing our new developer to the PKP applications and our organisation
+    - Testing our new servers for our production upgrade
+    - Planning for a project to start a preprint server, no technical work yet but planning to find out if the journals would want one
+        - Alec: We're integrating OJS and OPS in various ways; contact me for more information.
+- **Marc**
+    - Fixing SEO issues in google with our [new drupal site](https://publicacions.uab.cat). :_-(
+    - Docker image for OJS 3.3.0-14 (moved to alpine 3.17 and php8.1)
+    - A simple COUNTER harvester - [sushiReport](https://github.com/marcbria/sushiReport)
+    - Plausible Analytics for our service:
+        - GDPR/CCPA compliant "out of the box"
+        - Double counting: Statistics per [Journal](https://statistics.precarietat.net/atheneadigital.net/) and [Full service](https://statistics.precarietat.net).
+        - Easy to [integrate with OJS](https://atheneadigital.net/estadisticas)
+    - With DIG Spanish workgroup:
+        - Two working documents (DIG docs categorization / How to credit authors) (links removed)
+        - Two documents translated to spanish ([Accessibility Statement](https://docs.pkp.sfu.ca/accessibility-statement/es/) / [How to upgrade](https://docs.pkp.sfu.ca/dev/upgrade-guide/es/))
+    - Starting "BlockUsers" cli-plugin (based on Antii-Jussi's bash scripts). (Note from AJ: "not much there")
+    - Testing PKP's limeSurvery upgrade (no feedback yet).
+    - Collaboration with Johannes and Moritz to implement "official" fidus docker images.
+- **Ronald**
+    - Single-Source XML (SiSoX) project application submitted
+    - working on plugin upgrades for 3.4
+    - writing test plans
+    - writing template contract for GDPR data processing
+- **Alec**    
+    - OJS/OMP/OPS 3.4 RC1 nearly ready
+    - In approx. 2 weeks, RC2 will be ready. Community testing will start on that package.
+- **Name**
+    - Description
+
+
+### Highlight of the month: ###
+
+- None
+        
+
+Agenda
+------
+
+> Monographic about "How could a *consortium* of stakeholders help PKP build (or update) its JATS XML roadmap"
+
+
+PrePrecomments
+--------------
+
+- Alec: 
+    - What is the goal of this?
+        - Need to keep requirements specific and not technologically centered. Have clear use cases first; a tech strategy may emerge from there, but starting with the technology first (JATS) may not serve editors in the way they expect. (Editors may not be aware of the additional work required, even with a complete JATS toolset.)
+        - Marc: Avoid overlapping. Join efforts. There are lots of projects/grants/teams working on similar things, we are probably not aware of all of them.
+    - What are the editor's expectations?
+        - AJ: Do editors want XML or HTML? The goal is create html and other formats.
+        - Dulip: they want the PDFs.
+        - Marc: Generation (PDF, HTML, ePub), validation, exchange/
+    - Marc: Proposal: Starting point to summarize projects/groups that are out there. Volunteer to lead this.
+    - Pierre: Finding the conversation a little dizzying, too big a variety of implications. JATS4R/interoperability? Document-centric workflow?
+
+Precomments
+-----------
+
+Subjects to tackle:
+
+### Consortium
+
+How to constitute such a "consortium"? 
+
+- Could be a workgroup from the TC?
+    - Dulip: the aspect of requirement gathering in a broader user basis,  after that abstraction by an expert board can  be taken into consideration.
+    - Nate: a really really important question to ask is how the consortium will coordinate with a design-led development process? Any JATS XML workflow needs to have a designer who assembles the aims and objectives of the consortium into a coherent user experience.
+    - Davin: the assumptions is that a "PKP JATS XML roadmap" is desired (by PKP and potential members of that consortium)
+    - Alec: What about existing consortial/community approaches? e.g. JATS4R?
+    - Davin: We could focus on OJS users. Could help give us good quality use cases. Don't need to include others to get comprehensive idea of use cases.
+
+### Why XML? 
+
+- Who will produce it for what OJS services? (see Marc 2019 doc on XML usage in OJS)
+
+### JATS format
+
+-  Dulip:  [Master thesis in German](https://htwk-leipzig.qucosa.de/api/qucosa%3A75773/attachment/ATT-0/) on the identification of the minimally used  general JATS tag set written in the company letex, which performs a mathematical analysis of the minimal JATS set. [English Presentation](https://www.balisage.net/Proceedings/vol26/print/Imsieke01/BalisageVol26-Imsieke01.html) 
+
+### JATS' Editor 
+
+About JATS Editor.
+- Dulip : Fidus-Writer [demo](https://write.handbuch.io/ ), But  still sees the non-availability of a stand-alone UI as a problem. 
+- Dulip: Requirement gathered in Libero are  a good source
+- Dulip: Funding considerations of a chosend editor, how should we partner together to develop that 'common' editor ?
+- Dulip: Do we need a JATs editor specifically like texture or can we  leverage a good editor to export jats on-the-flye to cater our needs.
+- 
+
+
+### Workflows
+
+- Global preferred workflow proposed for OJS with alternative workflows 
+
+- e.g. JATS is not produced with an editor but uploaded because produced by a 3rd party
+
+- Dulip : On convesion to JATS from various input formats: A grant proposal has been written with Ronald and partners in this context for federal funds in Germany. Our proposal is to write a generic plugin that can be subclassed, which  maps the endpoint API into an object model which then further will be used to enhance/correct/validate and refine the XMLs coming from pipe-lines. We have already identified some tools that do the JATS conversion (pretty-well). Details in areas of  requirement gathering for validation, mapping of different JATS flavours need to be identified/refined and can be passed on to partners to in a collaborative manner.
+- Dulip: Aspect of specific tag-tests for different use-cases  seems sadly very relevant by users as a prequsite for adaption, although  we as a sfotware developer see the abstraction and the generalization as  out main target. So finding a balance is critical.
+
+
+### Coordination
+
+- How to track what partners are doing to facilitate collaboration and avoid overlaping?
+- Dulip: may be as a fiststep we invite  interested collegues to mattermost XML channel and initiate the discussion (e.g. Lucene Group: not a lot of commitments from participants, but still  think a good start with lots of valuable input)
+
+
+### Next steps / agreement
+
+- Marc will work on an updated document resembling "Who's Who in JATS"
+- Need to gather good use cases. Alec will create a space to collect use cases; all to add. Can discuss these next time.
+
+Notes
+-----
+
+
+Old Business
+------------
+
+- Community: Help to recover community committee?
+- Support: Proposals to facilitate support work: Knowledge base tool?
+
+
+Question of the Month
+---------------------
+
+TBD
+
+
+Other topics
+------------
+
+
+Next Meeting
+------------
+
+Third Thursday of the month: 8am Pacific
