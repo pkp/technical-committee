@@ -1,0 +1,119 @@
+# Thursday 21 August
+
+In Attendance
+-------------
+
+- Present: Alex, Ronald, AJ, Sebastian, Davin, Marc
+- Regrets: Emily (vacation), Alec, Joey, Martin (vacation), Dulip
+
+Meeting at: 
+[Former notes archive](https://github.com/pkp/technical-committee/tree/main/meeting-minutes).
+
+
+Quick Updates
+-------------
+
+### What have you been working on lately?
+
+- **Alex**
+    - Upgrading OPS to v3.4;
+    - Developing a plugin (with Lepidus) to transfer submissions from OPS to ScholarOne.
+- **Dulip**
+- **Sebastian**
+    - Aggregating Feedback for Individualize-Theme(https://github.com/NateWr/individualizeTheme) --> Preparing Upgrade Project Proposal
+        - To be included in the gallery soon (and some documentation addition about how to get a plugin in the gallery might be helpful)
+    - Finishing Initial Evaluation of Automatic OJS Tests 
+- **Marc**
+    - Vacations mode, but...
+        - Preparing a talk about Docker for CRAFT-OA.
+        - Docker images improvements (with Jon and Andrew). See [here](https://github.com/pkp/containers).
+- **Davin**
+    - Updated tech workplan for Coalition Publica (CP), including a dedicated OJS CP plugin that would help our support team troubleshoot an OJS instance that we don't administrate (the initial "[HealthCheck plugin](https://github.com/asmecher/healthCheck/)" idea)
+- **AJ**
+    - Note! I am in my car driving for the first 15 minutes!
+    - OJS/OMP test upgrades
+    - CRAFT-OA work for Datacitations and Controlled Vocabularies
+    - CRAFT-OA meet the experts workshop planning with Ronald
+    - Preparing our OJS/OMP Editors' day https://tsv.fi/fi/uutiset/teemapaiva-open-journal-systems-ja-open-monograph-press-jarjestelmia-kayttaville-0 (In Finnish)
+
+- **Ronald**
+  - vacation
+  - CRAFT-OA meet the experts workshop planning with AJ
+  - journal support buisness as usual
+
+Agenda
+------
+- review quick updates
+
+~~ - LTS page -- version chart? (Emily has checked in with Alejandra again too about timeline and location for the page -- there was a feedback deadline that passed without Alejandra hearing anything, but she's going to follow up and report back)
+~~ - Updates from the OJS-on-a-pi group
+~~ - followup on minimal OxS requirements -- is OJS-on-a-pi all we want to do for now? Are there other benchmarking projects or similar we want to be involved in? Can we remove this topic from our list or change it into getting updates about OJS-on-a-pi rather than general discussion?
+~~
+
+After reviewing the various options and with PKP absent from the meeting, those present decided to have an informal talk about topics :four: (Technical Healthcheck) and :five: (Research integrity).
+
+Notes
+-----
+
+- Ronald suggest to distinguish at least two types of health checks
+    - checks following an upgrade process
+    - checks under normal working conditions (test for changes of certain settings, e.g. plugins) 
+- For tech checks (topic 4), Marc suggest: 
+    - DB integrity (indexes, duplicates, inconsistencies...).
+    - Folders permissions.
+    - URL endpoints (htaccess mess).
+    - Requirements (php, libraries...).
+    - Versions & security patches.
+- AJ likes to include perfomance checks.
+    - DB slow query log would be possible but independent, OJS based approach would be more suitable
+    - Maybe it could make sense to check how _known_ problematic queries perform on your site/installation?
+- Alex talks about topic 5 and recalls PFL (Publications Facts Label) is a good basis.
+    - Also comments that non-technical administrative users have difficulties in finding potential PHP errors, so would it make sense to offer easier acess to the error logs in the "Health Check" plugin?
+- Davin explains how all this "health check" started. It was a plugin for Editors to show the technical health of the journal. It was not thought as a "pre-flight" list to check before opening your journal to the world (ie: indexing in crossref).
+    - Reference to Plugin of Alec from PKP Sprint (https://github.com/asmecher/healthCheck)
+- Marc recalls about the DISCO plugin (https://github.com/munipress/disco/) (fits on topic 5)
+- AJ talks about Dulip's work on checks before publishing (at article level).
+- Ronald see different check categories:
+    - Publication data: should be run in the moment you publish (article level).
+    - Technical checks.
+    - Journal's quality state.
+    - ...
+- Marc sees two main categories (tech and content) that could be subcategorized in a lot of ways (Tech: db, performance, urls... Content: journal, article...) depending on the goals of the check.
+- We agreed in thinking the checks form the user's perspective. Existing projects are:
+    - Erudit: Tech checks for editors to report the support team.
+    - DISCO: Diamond OA journals content (EDCH).
+    - ...
+- AJ says having a page that lists the most usually required environment information and recent high level errors could help when reportin things to the forum.
+    - showing the last 10 or so error messages could be an approach.
+- Who will develop and maintain those plugins?
+- Tech checks looks like a great tool to be used to help reporting in the support forum. It could be extended with log errors and extra information (php version, libraries...) to help editors reporting better when they ask for support.
+
+Pending work
+------------
+
+Next steps in supported versions:
+- [ ] Alec clarify the license on web-php. (Filed: https://github.com/php/web-php/issues/1280)
+
+Next steps about [KM tool](https://github.com/pkp/technical-committee/blob/main/meeting-minutes/2024-07-18.md):
+- [ ] Group to try various proofs of concept:
+    - [ ] AI / chatbot options (Martin)
+    - [ ] FAQ specialized tools (Marc)
+    - [ ] FAQ area in forum for guiding support / Github Discussions for policies (Alec)
+        
+
+Old Business
+------------
+
+Other topics
+------------
+
+- :one: (In progress) How to show OxS requirements?: php version, php plugins, HW requirements... 
+- :two: Core vs. Plugin-Approaches for new features.
+- :three: Open Repositories integrations (SignPosting, FAIRiCat, COARNotify). 
+- :four: Ideas for the Health Check plugin.
+- :five: Research integrity checks (e.g., looking for papermills, suspicious activies (author and reviewer being the same person), fast journal turnaround (peer review happening too quickly)
+
+Next Meeting
+------------
+
+Third Thursday of the month: 8am Vancouver time
